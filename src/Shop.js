@@ -22,7 +22,7 @@ class Shop extends React.Component {
 
     componentDidMount() {
         axios
-            .get("http://localhost:8080/items")
+            .get("https://zavrsni2019-backend.herokuapp.com/items")
             .then(res=>{
                 if(res.data.success){
                     this.setState({
@@ -45,7 +45,7 @@ class Shop extends React.Component {
         e.preventDefault();
         if(this.state.keyword!=""){
             axios
-            .get("http://localhost:8080/search/" + this.state.keyword)
+            .get("https://zavrsni2019-backend.herokuapp.com/search/" + this.state.keyword)
             .then(res => {
                 if (res.data.success) {
                     if(res.data.data.length==0){
@@ -81,7 +81,7 @@ class Shop extends React.Component {
     }
     addToCart = (itemId) => {
         axios
-            .post("http://localhost:8080/cart/add", {
+            .post("https://zavrsni2019-backend.herokuapp.com/cart/add", {
                 cartId: this.state.cartId,
                 itemId: itemId
             })
