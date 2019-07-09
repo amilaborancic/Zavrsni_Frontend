@@ -6,7 +6,7 @@ import Register from "./Register";
 import Cart from "./Cart";
 import Shop from "./Shop";
 import "./App.css"
-
+//pls proradi
 class App extends React.Component {
 
   render() {
