@@ -6,6 +6,7 @@
     "npm":"6.9.0",
     "node":"10.14.1"
   },
+  "main": "node index.js",
   "dependencies": {
     "@hapi/hoek": "^6.2.1",
     "@hapi/joi": "^15.0.0",
