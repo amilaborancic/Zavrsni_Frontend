@@ -7,4 +7,4 @@ if (process.env.NODE_ENV === 'production') {
       res.sendFile(path.join('build', 'index.html'));
     });
   }
-app.listen(process.env.PORT || 8080);
+app.listen(process.env.PORT || 3000);
