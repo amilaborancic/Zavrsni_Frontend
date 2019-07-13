@@ -7,5 +7,6 @@ if (process.env.NODE_ENV === 'production') {
       res.sendFile(path.join('build', 'index.html'));
     });
   }
+
 app.listen(process.env.PORT || 8080);
 console.log("slusam");

@@ -20,7 +20,7 @@ class Profile extends React.Component {
     }
     componentDidMount(){
         axios
-            .get("https://zavrsni2019-backend.herokuapp.com/info/" + this.state.userId)
+            .get("https://zavrsni2019-backend.herokuapp.com/customer/info/" + this.state.userId)
             .then(res=>{
                 if(res.data.success){
                     var user = res.data.data[0];
